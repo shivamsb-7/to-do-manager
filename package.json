@@ -1,0 +1,13 @@
+{
+  "name": "todo-manager",
+  "version": "1.0.0",
+  "description": "A simple Student To-Do Manager for DevOps lab assignments",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
