@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: to-do-manager-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: to-do-manager
+  template:
+    metadata:
+      labels:
+        app: to-do-manager
+    spec:
+      containers:
+        - name: to-do-manager
+          image: to-do-manager:1.0
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000
